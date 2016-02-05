@@ -8,19 +8,18 @@ def insertValAt(index, myList, value):
     if (index > len(myList) or index < 0):
         return False
 
-    else:
-        # loop through the array starting from the end
-        i = len(myList)
+    # loop through the array starting from the end
+    i = len(myList)
 
-        # increase length of array
-        myList.append(0)
+    # increase length of array
+    myList.append(0)
 
-        while i > index:
-            myList[i] = myList[i - 1]
-            i -= 1
+    while i > index:
+        myList[i] = myList[i - 1]
+        i -= 1
 
-        myList[index] = value
+    myList[index] = value
 
-        return myList
+    return myList
 
 
